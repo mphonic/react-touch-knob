@@ -330,4 +330,4 @@ class TouchKnob extends React.Component {
     }
 }
 
-module.exports = TouchKnob
+export default TouchKnob
