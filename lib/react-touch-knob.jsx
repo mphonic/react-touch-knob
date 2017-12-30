@@ -7,7 +7,7 @@ const arcEndOffset = 1 - arcStartOffset + 2;
 const arcEnd = arcEndOffset * Math.PI;
 const arcOffsetRange = arcEndOffset - arcStartOffset;
 
-export default class TouchKnob extends React.Component {
+class TouchKnob extends React.Component {
 
     constructor(props) {
         super(props);
@@ -329,3 +329,5 @@ export default class TouchKnob extends React.Component {
         )
     }
 }
+
+module.exports = TouchKnob
