@@ -242,8 +242,9 @@ class TouchKnob extends React.Component {
         let x = e.pageX;
         let y = e.pageY;
         let r = this.width * 0.5;
-        let centerX = this.container.offsetLeft + r;
-        let centerY = this.container.offsetTop + r;
+        let rect = this.container.getBoundingClientRect();
+        let centerX = rect.left + r;
+        let centerY = rect.top + r;
         let style = getComputedStyle(this.container);
         let laneWidth = parseInt(style.lineHeight) || 12;
         let xnorm = x - centerX;
@@ -262,12 +263,13 @@ class TouchKnob extends React.Component {
         let x = e.pageX;
         let y = e.pageY;
         let r = this.width * 0.5;
-        let centerX = this.container.offsetLeft + r;
-        let centerY = this.container.offsetTop + r;
+        let rect = this.container.getBoundingClientRect();
+        let centerX = rect.left + r;
+        let centerY = rect.top + r;
         let xnorm = x - centerX;
         let ynorm = centerY - y;
         let canvasAngle = Math.atan2(xnorm, ynorm) / Math.PI + 1.5;
-        canvasAngle = Math.max(arcStartOffset, Math.min(arcEndOffset, canvasAngle)); 
+        canvasAngle = Math.max(arcStartOffset, Math.min(arcEndOffset, canvasAngle));
         return (canvasAngle - arcStartOffset) / arcOffsetRange;
     }
 
