@@ -9,7 +9,8 @@ const config = {
     entry: APP_DIR + '/react-touch-knob.jsx',
     output: {
         path: BUILD_DIR,
-        filename: 'index.js'
+        filename: 'index.js',
+        libraryTarget: 'commonjs2'
     },
     module: {
         loaders: [
