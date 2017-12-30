@@ -324,7 +324,7 @@ class TouchKnob extends React.Component {
                     name={this.props.name}
                     value={this.state.value}
                     onChange={e => {return}}
-                    style={{ position: "absolute", opacity: 0, top: 0, left: 0, width: "100%", zIndex: -1 }} />
+                    style={{ display: none }} />
             </div>
         )
     }
