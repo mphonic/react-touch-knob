@@ -1,0 +1,28 @@
+{
+  "name": "react-touch-knob",
+  "productName": "React Touch Knob",
+  "description": "Knob UI element for React with touch capabilities",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Bhob Rainey <info@bhobrainey.com>",
+  "copyright": "© 2017, Bhob Rainey",
+  "homepage": "https://bhobrainey.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mphonic/react-touch-knob.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "knob",
+    "touch"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "license": "MIT"
+}
