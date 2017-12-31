@@ -246,7 +246,7 @@ class TouchKnob extends React.Component {
         let centerX = rect.left + r;
         let centerY = rect.top + r;
         let style = getComputedStyle(this.container);
-        let laneWidth = parseInt(style.lineHeight) || 12;
+        let laneWidth = parseFloat(style.lineHeight) || 12;
         let xnorm = x - centerX;
         let ynorm = centerY - y;
         let dist = Math.sqrt(xnorm ** 2 + ynorm ** 2);
@@ -278,9 +278,8 @@ class TouchKnob extends React.Component {
         let ctx = this.canvas.getContext("2d");
         let style = getComputedStyle(this.container);
         let r = size * 0.5;
-        let laneWidth = parseInt(style.lineHeight) || 12;
-        let lh = Math.round(laneWidth * 0.5);
-        let lq = Math.round(laneWidth * 0.25);
+        let laneWidth = parseFloat(style.lineHeight) || 12;
+        let lh = laneWidth * 0.5;
         let laneColor = style.borderBottomColor;
         let meterColor = style.borderTopColor;
         if (laneColor === meterColor)
@@ -293,12 +292,12 @@ class TouchKnob extends React.Component {
         ctx.lineWidth = laneWidth;
         if (this.props.rounded)
             ctx.lineCap = "round";
-        ctx.arc(r, r + lq, r - lh, arcStart, arcEnd);
+        ctx.arc(r, r, r - lh, arcStart, arcEnd);
         ctx.stroke();
 
         ctx.beginPath();
         ctx.strokeStyle = meterColor;
-        ctx.arc(r, r + lq, r - lh, arcStart, (this.state.rawValue * arcOffsetRange + arcStartOffset) * Math.PI)
+        ctx.arc(r, r, r - lh, arcStart, (this.state.rawValue * arcOffsetRange + arcStartOffset) * Math.PI)
         ctx.stroke();
     }
 
