@@ -59,3 +59,4 @@ TouchKnob can be included in a responsive design with one caveat: if there is a 
 TouchKnob can be adjusted directly by starting a mousedown or touch in the knob's lane and dragging circularly around the knob. Additionally, for potentially finer adjustments and to avoid sudden value changes, a mousedown or touch in the center of the knob (without touching the lane), followed by dragging up or to the right increases the knob value, while dragging down or to the left decreases it. A fast adjustment will "fling" the knob, animating to a value based on the momentum of the fling unless the disableAnimation property is set to true.
 ### Examples
 Coming soon...
+Though you can see some knobs in action on [snap-to-emo](https://github.com/mphonic/snap-to-emo)
