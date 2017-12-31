@@ -30,7 +30,7 @@ TouchKnob can be styled using existing CSS properties, repurposed for this compo
     width: 100px; /* the canvas's width and height will be based only on the width of the element */
     height: 100px; 
     font-size: 2vw; /* font-size of the text output */
-    line-height: 22%; /* width of the knob's "lane" */
+    line-height: 60%; /* width of the knob's "lane" */
     border-bottom-color: #ccc; /* background color of "lane" */
     border-top-color: "blue"; /* color of knob's value indicator */
 }
