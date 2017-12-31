@@ -54,7 +54,7 @@ TouchKnob can be included in a responsive design with one caveat: if there is a 
 ### Events
 * onChange: Returns the knob's value whenever that value is changed
 * onEnd: Returns the knob's value after an adjustment is complete (on mouseup, touchend, or at the end of an animation)
-* valueTransformDisplay: Returns the knob's value whenever that value is changed. You may then transform and return that value to a string for display if showNumber is true; i.e., round the value to a certain precision, append a string to the end of the number, etc. This does not affect the actual value, only the way it is displayed. 
+* valueTransformDisplay: Returns the knob's value whenever that value is changed. You may then transform and return that value as a string for display if showNumber is true; i.e., round the value to a certain precision, append a string to the end of the number, etc. This does not affect the actual value, only the way it is displayed. 
 ### User Interaction
 TouchKnob can be adjusted directly by starting a mousedown or touch in the knob's lane and dragging circularly around the knob. Additionally, for potentially finer adjustments and to avoid sudden value changes, a mousedown or touch in the center of the knob (without touching the lane), followed by dragging up or to the right increases the knob value, while dragging down or to the left decreases it. A fast adjustment will "fling" the knob, animating to a value based on the momentum of the fling unless the disableAnimation property is set to true.
 ### Examples
