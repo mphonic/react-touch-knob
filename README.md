@@ -9,7 +9,7 @@ Assuming you are using react and react-dom:
 ```
 import TouchKnob from "react-touch-knob"
 
-<Touch Knob
+<TouchKnob
     class="my-knob-class"
     name="score"
     min="0"
